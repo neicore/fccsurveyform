@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FreeCodeCamp Survey</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">FreeCodeCamp Survey</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <form action="#" id="survey-form">
+
+            <div class="side-to-side">
+                <!-- Name -->
+                <div class="name">
+                    <label for="name" id="name-label">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Fullname">
+                </div>
+
+                <!-- Age -->
+                <div class="age">
+                    <label for="number" id="number-label">Age(Optional)</label>
+                    <input type="number" id="number" name="number" placeholder="Your Age" min="10" max="100">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="email">
+                <label for="email" id="email-label">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email adress here" required>
+            </div>
+
+            <!-- Please Choose Your Role -->
+            <div class="first-dropdown">
+                <label for="dropdown" id="dropdown-label">Please Choose Your Role</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value> Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="part-time">Part time</option>
+                    <option value="fulltime">Full time</option>
+                </select>
+            </div>
+
+            <!-- Would you recommend FCC to a friend? -->
+            <div class="radios">
+                <p>Would you recommend FCC to a friend?</p>
+                <div class="all-radio">
+                    <div class="radio1">
+                        <input type="radio" name="user-recomend" id="radio1" value="definitely">
+                        <label for="radio1">Definitely</label>
+                    </div>
+
+                    <div class="radio2">
+                        <input type="radio" name="user-recomend" id="radio2" value="maybe">
+                        <label for="radio2">Maybe</label>
+                    </div>
+
+                    <div class="radio3">
+                        <input type="radio" name="user-recomend" id="radio3" value="Not sure">
+                        <label for="radio3">Not Sure</label>
+                    </div>
+
+                    <div class="radio4">
+                        <input type="radio" name="user-recomend" id="radio4" value="no">
+                        <label for="radio4">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What is your favourite FCC feature? -->
+            <div class="second-dropdown">
+                <label for="fav-feature">What is your favourite FCC feature?</label>
+                <select name="fav-feature" id="fav-feature">
+                    <option disabled selected value>Select Option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+
+            <!-- What would you like to see improved? -->
+            <div class="checks">
+                <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+                <div class="all-checks">
+                    <div class="check1">
+                        <input type="checkbox" name="prefer" id="check1" value="frontend-projects">
+                        <label for="check1">Front-end Projects</label>
+                    </div>
+
+                    <div class="check2">
+                        <input type="checkbox" name="prefer" id="check2" value="backend-projects">
+                        <label for="check2">Back-end Projects</label>
+                    </div>
+
+                    <div class="check3">
+                        <input type="checkbox" name="prefer" id="check3" value="data-vizualization">
+                        <label for="check3">Data Vizualization</label>
+                    </div>
+
+                    <div class="check4">
+                        <input type="checkbox" name="prefer" id="check4" value="challenges">
+                        <label for="check4">Challenges</label>
+                    </div>
+
+                    <div class="check5">
+                        <input type="checkbox" name="prefer" id="check5" value="opensource-community">
+                        <label for="check5">Open Source Community</label>
+                    </div>
+
+                    <div class="check6">
+                        <input type="checkbox" name="prefer" id="check6" value="gitter-help-rooms">
+                        <label for="check6">Gitter help rooms</label>
+                    </div>
+
+                    <div class="check7">
+                        <input type="checkbox" name="prefer" id="check7" value="videos">
+                        <label for="check7">Videos</label>
+                    </div>
+
+                    <div class="check8">
+                        <input type="checkbox" name="prefer" id="check8" value="city-meetups">
+                        <label for="check8">City Meetups</label>
+                    </div>
+
+                    <div class="check9">
+                        <input type="checkbox" name="prefer" id="check9" value="wiki">
+                        <label for="check9">Wiki</label>
+                    </div>
+
+                    <div class="check10">
+                        <input type="checkbox" name="prefer" id="check10" value="forum">
+                        <label for="check10">Forum</label>
+                    </div>
+
+                    <div class="check11">
+                        <input type="checkbox" name="prefer" id="check11" value="additional-courses">
+                        <label for="check11">Additional Courses</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment Field -->
+            <div class="comment">
+                <p>Any comments or suggestions</p>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="btn">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="empty">
+        </div>
+    </main>
+</body>
+
+</html>
